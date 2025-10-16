@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的個人網頁作業</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    nav {
+      float: left;
+      width: 25%;
+      background: #ccc;
+      padding: 20px;
+      min-height: 500px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    nav a:hover {
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 75%;
+      background-color: #f1f1f1;
+      min-height: 500px;
+    }
+
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+      transform: scale(1.1);
+    }
+
+    /* 圖片展示區 */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .gallery img {
+      width: 32%;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* 響應式 */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+      .gallery img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>我的個人網頁作業</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#about">關於我</a></li>
+      <li><a href="#video">影片介紹</a></li>
+      <li><a href="#gallery">圖片展示</a></li>
+      <li><a href="#chart">氣溫統計圖</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2 id="about">關於我</h2>
+    <p>學校:虎尾科技大學 科系:資訊工程系 學號:41443137 姓名:陳宥程</p>
+    <p>作業內容;
+1.請參考圖5-10，畫出您的網頁架構圖。(20%)
+
+2.依照您的架構圖使用HTML, CSS來設計網頁。(20%)
+
+3.網頁中內嵌您最喜歡的影片和照片。(20%)
+
+4.使用到JavaScript做出統計圖表。(10%)
+
+5.設計響應式網頁。(10%)
+
+6.把您設計的網頁上架到網站中。(10%)
+
+7.用超連結您在班上三位同學架設的網站。(10%)</p>
+
+    <hr>
+
+    <h2 id="video">影片介紹</h2>
+    <p>個人推薦</p>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/OcrIJi3-I6Y" title="#MLB【#紐約洋基 VS #洛杉磯道奇】全場賽事精華｜20241026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/WkWAjtSpl5Y" title="【全場精華】冠軍賽 11/24 中華 vs. 日本 ｜ 世界12強棒球賽" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/n5naWXzXXsE" title="道奇隊史單季最多轟！大谷翔平2025例行賽 55轟全紀錄｜MLB天天10場直播鎖定ELTA.tv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/pBejF5E69pI" title="速度快到成為迷因，還沒有汽車駕照就成為F1車手？從史上最年輕車手到成為F1王者｜Redbull 車王 Max Verstappen 人物誌" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <hr>
+
+    <h2 id="gallery">圖片展示</h2>
+      <p>隨便找的</p>
+    <div class="gallery">
+      <img src="123.png" alt="我的圖片">
+      <img src="2.png" alt="我的圖片">
+      <img src="3.png" alt="我的圖片">
+      <img src="4.png" alt="我的圖片">
+    </div>
+
+    <hr>
+
+    <h2 id="chart">2024 年台灣每月平均氣溫變化</h2>
+    <!-- 縮小統計圖 -->
+    <div style="width:60%; max-width:500px; margin:auto;">
+      <canvas id="weatherChart"></canvas>
+    </div>
+
+    <br>
+    <button onclick="showAlert()">點我會爆炸！</button>
+  </article>
+</section>
+
+<footer>
+  <p>© 2024 我的個人網頁作業</p>
+</footer>
+
+<!-- 引入 Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- 折線圖資料 -->
+<script>
+const ctx = document.getElementById('weatherChart');
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+    datasets: [{
+      label: '平均氣溫 (°C)',
+      data: [17, 18, 20, 23, 26, 28, 29, 29, 28, 25, 22, 18],
+      borderColor: 'blue',
+      backgroundColor: 'rgba(0, 0, 255, 0.2)',
+      fill: true,
+      tension: 0.3,
+      pointRadius: 4,
+      pointBackgroundColor: 'blue'
+    }]
+  },
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: '2024 年台灣平均氣溫變化'
+      }
+    },
+    scales: {
+      y: {
+        title: {
+          display: true,
+          text: '氣溫 (°C)'
+        }
+      },
+      x: {
+        title: {
+          display: true,
+          text: '月份'
+        }
+      }
+    }
+  }
+});
+
+// JavaScript 動態效果
+function showAlert() {
+  alert("BOOM！");
+}
+</script>
+
+</body>
+</html>
